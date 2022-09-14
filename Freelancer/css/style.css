@@ -4,6 +4,7 @@
     --primario: #ffc107;
     --secundario: #0097a7;
     --gris: #757575; 
+    --grisClaro: #dfe9f3;
 }
 html {
     font-size: 62.5%;
@@ -15,15 +16,27 @@ html {
 body{
     font-size: 16px; /*1rem = 10px*/
     font-family: 'Krub', sans-serif; 
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
 }
-.titulo {
-    text-align: center;
+/*Tipografia*/
+h1{
     font-size: 3.8rem; 
- 
 }
+h2{
+    font-size: 2.8rem; 
+}
+h3{
+    font-size: 1.8rem; 
+}
+h1,h2,h3{
+    text-align: center;
+}
+/*titulos*/
 .titulo span {
     font-size: 2rem;
 }
+/*Navegacion*/
+
 .nav-bg{
     background-color: var(--secundario);
 
@@ -31,6 +44,19 @@ body{
 .container{
     max-width: 120rem;
     margin: 0 auto;
+}
+.boton{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
 }
 .main-menu{
     display: flex;
@@ -41,6 +67,9 @@ body{
     .main-menu{
         flex-direction: row;
         justify-content: space-between;
+    }
+    .boton{
+        width: auto;
     }
 }
 .main-menu a{
@@ -55,17 +84,6 @@ body{
 .main-menu a:hover{
     background-color: var(--primario);
     color: var(--oscuro);
-}
-@media (min-width:480px){
-    h1{
-
-    }
-}
-
-@media (min-width:768px){
-    h1{
-
-    }
 }
 .hero{
     background-image: url(../img/hero.jpg);
@@ -88,4 +106,8 @@ body{
 .contenido-hero p{
     color: var(--blanco);
 
+}
+.ubicacion{
+    display:flex;
+    align-items: flex-end;
 }
