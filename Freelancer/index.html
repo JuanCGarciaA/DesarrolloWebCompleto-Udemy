@@ -106,34 +106,36 @@
             <form action="" class="formulario">
                 <fieldset>
                     <legend>Contactame llenando los datos</legend>
-                    <div>
-                        <label for="">Nombre</label>
-                        <input type="text" name="Name" id="Name" placeholder="Nombre">    
-                    </div>
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label for="">Nombre</label>
+                            <input class="input-text" type="text" name="Name" id="Name" placeholder="Nombre">    
+                        </div>
 
-                    <div>
-                        <label for="">Telefono</label>
-                        <input type="tel" name="Phone" id="Phone" placeholder="Tu teléfono">    
-                    </div>
-                    
-                    <div>
-                        <label for="">Correo</label>
-                        <input type="email" name="Mail" id="Mail" placeholder="Tu Email">    
-                    </div>
-                    
-                    <div>
-                        <label for="">Mensaje</label>
-                        <textarea name="Mess" id="Mess" cols="30" rows="10"></textarea>    
+                        <div class="campo">
+                            <label for="">Telefono</label>
+                            <input class="input-text" type="tel" name="Phone" id="Phone" placeholder="Tu teléfono">    
+                        </div>
+                        
+                        <div class="campo">
+                            <label for="">Correo</label>
+                            <input class="input-text" type="email" name="Mail" id="Mail" placeholder="Tu Email">    
+                        </div>
+                        
+                        <div class="campo">
+                            <label for="">Mensaje</label>
+                            <textarea class="input-text" name="Mess" id="Mess" cols="30" rows="10"></textarea>    
+                        </div>
                     </div>
                 
-                    <div>
-                        <button>Enviar</button>
+                    <div class="alinear-derecha flex">
+                        <button class="boton w-sm">Enviar</button>
                     </div>
                 </fieldset>
             </form>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <p>Todos los derechos reservados. Juan Carlos García Freelancer</p>
     </footer>
 
